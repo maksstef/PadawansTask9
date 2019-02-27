@@ -12,6 +12,8 @@ namespace PadawansTask9
                 throw new ArgumentNullException();
             if (points.Length == 0)
                 throw new ArgumentException();
+            if (range <= 0)
+                throw new ArgumentException();
             //передаётся точка, затем радиус вокруг неё, массив точек, которые нужно отсортировать
             List<Point> NewPoints = new List<Point>();
             for(int i = 0; i < points.Length; ++i)
